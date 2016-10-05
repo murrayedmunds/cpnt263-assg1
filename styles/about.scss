@@ -1,2 +1,30 @@
 @import "partial/_variable.scss";
 @import "partial/_common.scss";
+
+.about {
+	border: $border-style;
+	box-shadow: $border-shadow;
+	margin: 1.4em 0;
+	padding: 0 1em;
+	&-img{
+		border: $border-style;
+		&-cap{
+			padding: 0 .5em;
+		}
+	}
+}
+
+@media only screen and (min-width: 35em){
+	.about{
+		&-img{
+			max-width: 15em;
+			float: left;
+			margin: 0 1em .5em 0;
+		}
+		&-question{
+			display: block;
+			max-width: 25em;
+			margin:0 auto;
+		}
+	}	
+}
