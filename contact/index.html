@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- ===================Head Start =============================================  -->
+	<head>
+		<title>Murray's Blog</title>
+		<link rel="stylesheet" href="../styles.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="This is how you contact Murray Edmunds">
+		<!--[if lt IE 9]>
+    		<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+<!-- ===================Body Start =============================================  -->
+	<body>
+		<header role="banner" class="banner">
+			<h1 class="banner-title">This is Murray</h1>
+			<ul class="banner-contact">
+				<li class="banner-contact-item"><a href="mailto:murray.edmunds@live.com">murray.edmunds@live.com</a></li>
+				<li class="banner-contact-item"><a href="tel:1-306-290-1891">1-306-290-1891</a></li>
+			</ul>
+			<ul class="banner-social">
+				<li class="banner-social-item">Follow Me</li>
+				<li class="banner-social-item"><a href="http://www.twitter.com/murrayedmunds"><img src="../icons/twitter.svg" alt="twitter"></a></li>
+				<li class="banner-social-item"><a href="https://www.facebook.com/murray.edmunds.58"><img src="../icons/facebook.svg" alt="facebook"></a></li>
+				<li class="banner-social-item"><a href="https://ca.linkedin.com/in/murrayedmunds"><img src="../icons/linkedin.svg" alt="linkedin"></a></li>
+			</ul>
+			<nav role="navigation" class="nav">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="../index.html">home</a></li>
+					<li class="nav-list-item"><a href="../about/index.html">about</a></li>
+					<li class="nav-list-item"><a href="/contact/index.html">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+<!-- ===================Main Start =============================================  -->
+		<main role="main" class="contact">
+			<fieldset class="contact-fieldset">
+				<legend class="contact-legent">Contact Us</legend>
+				<div class="contact-input">
+					<label for="contact-input-name">Name</label>
+					<br>
+					<input type="text" name="name" id="contact-name" placeholder="George Michael">
+				</div>
+				<div class="contact-input">
+					<label for="contact-input-email">Email (Required)</label>
+					<br>
+					<input type="email" name="email-address" id="contact-input-email" placeholder="name@domain.com" required aria-required="true">
+				</div>
+				<div class="contact-input">
+					<label for="contact-input-phone">Phone Number</label>
+					<br>
+					<input type="tel" name="phone" id="contact-input-phone" placeholder="1-403-789-1234">
+				</div>
+				<div class="contact-input">
+					<label for="contact-input-comment">Your Message (Required)</label><br>
+					<textarea name="comment" id="contact-input-comment" placeholder="Your message here..." required aria-required="true"></textarea>
+				</div>
+				<input type="submit" name="send" id="send" value="Send">
+			</fieldset>
+		</main>
+<!-- ===================Blog Roll Start =============================================  -->
+		<aside role="complementary">
+		<div class="sidebar blogroll">
+			<h3 class="sidebar-title">Contact Info</h3>
+			<ul class="sidebar-list">
+				<li class="sidebar-list-item"><a href="mailto:murray.edmunds@live.com">murray.edmunds@live.com</a></li>
+				<li class="sidebar-list-item"><a href="tel:1-306-290-1891">1-306-290-1891</a></li>
+			</ul>
+		</div>
+		<div class="sidebar side-contact">
+			<h3 class="sidebar-title">Blog Roll</h3>
+			<ul class="sidebar-list">
+				<li class="sidebar-list-item"><a href="http://www.cbc.ca/news">CBC News</a></li>
+				<li class="sidebar-list-item"><a href="http://www.si.com">SI</a></li>
+				<li class="sidebar-list-item"><a href="http://www.sportsnet.ca">Sportsnet</a></li>
+				<li class="sidebar-list-item"><a href="http://www.tsn.ca">TSN</a></li>
+			</ul>
+		</div>
+		</aside>
+<!-- ===================Footer Start =============================================  -->
+		<footer role="contentinfo">
+			<p>All icons via <a href="thenounproject.com"><cite>thenounproject.com</cite></a></p>
+			<p>&copy; 2016 SAIT Web Developer Class</p>
+		</footer>
+	</body>
+</html>
