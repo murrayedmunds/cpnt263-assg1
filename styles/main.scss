@@ -3,6 +3,38 @@
 
 .blogpost {
 	border: $border-style;
+	box-shadow: $border-shadow;
 	margin: 1.4em 0;
-	padding: 0 .5em;
+	padding: 0 1em;
+	&-stamp{
+		width: 100%;
+		&-title, &-desc{
+			display: inline-block;
+		}
+		&-desc {
+			margin-left: .25em;
+			& + .blogpost-stamp-title {
+				margin-left: 2em;
+			}
+		}
+	}
+	&-pic{
+		float: left;
+		margin: 0 1em .5em 0;
+	}
+}
+
+@media only screen and (min-width: 80em){
+	main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: stretch;
+		align-content: flex-start;
+		.blogpost{
+			flex: 1 0 40%;
+			margin: 1.4em 1em;
+		}
+	}
 }
