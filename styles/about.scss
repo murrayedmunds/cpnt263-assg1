@@ -1,8 +1,2 @@
 @import "partial/_variable.scss";
-@import "partial/common.scss";
-
-.blogpost {
-	border: $border-style;
-	margin: 1.4em 0;
-	padding: 0 .5em;
-}
+@import "partial/_common.scss";
