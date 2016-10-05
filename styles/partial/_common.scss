@@ -18,11 +18,12 @@ body {
 .banner{
 	width: 100%;
 	border: $border-style;
+	box-shadow: $border-shadow;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	align-items: baseline;
+	align-items: center;
 	align-content: center;
 	&-title{
 		text-align: center;
@@ -32,9 +33,11 @@ body {
 	}
 	p{
 		@extend .banner-title;
+		margin-top: 1.4em;
 	}
-	&-list{
+	&-contact{
 		padding-left: 0;
+		margin: .7em 1em;
 		&-item{
 			list-style-type: none;
 			text-align: center;
@@ -44,14 +47,11 @@ body {
 	}
 	&-social{
 		padding-left: 0;
-		margin-top: 1.4em;
+		margin: .7em 1em;
 		&-item{
-			@extend .banner-list-item;
+			@extend .banner-contact-item;
 			display: inline-block;
 			width: 2em;
-		}
-		&-item:first-child{
-			width: 100%;
 		}
 	}
 }
@@ -59,8 +59,7 @@ body {
 .nav{
 	width: 100%;
 	&-list{
-		@extend .banner-list;
-		margin: 0 .5em 1.4em;
+		margin: .7em 1.4em;
 		padding-left: 0;
 	}		
 	&-list-item{
@@ -82,11 +81,18 @@ h2, h3 {
 	text-shadow: $text-shadow;
 }
 /* --------- aside --------- */
-aside{
+.side{
 	border: $border-style;
-	padding: 0 .5em;
-	.side-contact{
+	box-shadow: $border-shadow;
+	padding: 0 1em;
+	.sideContact{
 		display: none;
+		&-list{
+			padding-left: 1.5em;
+			&-item{
+				list-style-type: none;
+			}
+		}
 	}
 }
 
@@ -118,10 +124,10 @@ footer{
 	main{
 		flex:3;
 	}
-	aside{
+	.side{
 		flex:1;
 		margin: 1.4em 0 1.4em 1.4em;
-		.side-contact{
+		.sideContact{
 			display: initial;
 		}
 	}
