@@ -23,6 +23,12 @@
 		}
 	}
 	&-pic{
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 35em){
+	.blogpost-pic{
 		float: left;
 		margin: 0 1em .5em 0;
 	}
@@ -39,6 +45,10 @@
 		.blogpost{
 			flex: 1 0 40%;
 			margin: 1.4em 1em;
+			&-pic{
+				float: initial;
+				margin: 0 auto;
+			}
 		}
 	}
 }
