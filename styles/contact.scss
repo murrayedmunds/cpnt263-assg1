@@ -1,2 +1,53 @@
 @import "partial/_variable.scss";
 @import "partial/_common.scss";
+
+.contact{
+	&-fieldset{
+		border: $border-style;
+		box-shadow: $border-shadow;
+		margin: 1.4em 0;
+		padding: 0 1em 1em;
+	}
+	&-legend{
+		font-size: 1.5em;
+		text-shadow: $text-shadow;
+	}
+	#name, #email, #phone, #reason{
+	width: 100%;
+	height: 2em;
+	}
+	#comment {
+		width: 100%;
+		height: 10em;
+	}
+	#send {
+		width: 10em;
+		height: 2em;
+	}
+}
+
+@media only screen and (min-width: 55em){
+	.side {
+
+	}
+}
+
+@media only screen and (min-width: 70em){
+	.contact-fieldset {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: stretch;
+		align-content: flex-start;
+		.contact-legend{
+			width: 100%
+		}
+		.contact-input{
+			flex: 0 0 48%;
+		}
+		.contact-comment{
+			width: 100%;
+		}
+	}
+}
