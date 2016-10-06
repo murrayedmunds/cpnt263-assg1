@@ -1,0 +1,33 @@
+@import "_variable.scss";
+
+@media only screen and (min-width: 25em) {
+	.nav{		
+		&-list-item{
+		display: inline-block;
+		margin: 0 auto;
+		width: 32%;
+		}
+	}	
+}
+@media only screen and (min-width: 55em) {
+	body{
+		font-size: 1.4em;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	.banner-contact{
+		display: none;
+	}
+	main{
+		flex:3;
+	}
+	.side{
+		flex:1;
+		margin: 1.4em 0 1.4em 1.4em;
+		.sideContact{
+			display: initial;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@import "_variable.scss";
+
+.side{
+	border: $border-style;
+	box-shadow: $border-shadow;
+	padding: 0 1em;
+	.sideContact{
+		display: none;
+		&-list{
+			padding-left: 1.5em;
+			&-item{
+				list-style-type: none;
+			}
+		}
+	}
+}
